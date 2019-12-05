@@ -34,11 +34,7 @@ const IndexPage = () => (
     <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
+          <h2>Background</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
             eleifend
@@ -49,17 +45,17 @@ const IndexPage = () => (
         </header>
         <ul className="icons major">
           <li>
+            <span className="icon brands fa-react major style2">
+              <span className="label">Ipsum</span>
+            </span>
+          </li>
+          <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
+            <span className="icon brands fa-git-alt major style3">
               <span className="label">Dolor</span>
             </span>
           </li>
@@ -73,11 +69,7 @@ const IndexPage = () => (
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
+          <h2>Projects</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
@@ -89,11 +81,7 @@ const IndexPage = () => (
           <img src={pic2} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
+          <h2>Cocktail_DB</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
@@ -105,11 +93,19 @@ const IndexPage = () => (
           <img src={pic3} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
+          <h2>Real Estate Deal Analyzer</h2>
+          <p>
+            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
+            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          </p>
+        </div>
+      </section>
+      <section className="spotlight">
+        <div className="image">
+          <img src={pic1} alt="" />
+        </div>
+        <div className="content">
+          <h2>Open Source Contributions</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
