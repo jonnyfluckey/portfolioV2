@@ -7,6 +7,7 @@ import Scroll from '../components/Scroll';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
+import pic4 from '../assets/images/cocktail_db_mockup.jpg';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -78,14 +79,34 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <img src={pic4} alt="" />
         </div>
         <div className="content">
           <h2>Cocktail_DB</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            An application for searching cocktail recipes. The application has
+            the ability to search for cocktails, save your favorites, or pull a
+            random cocktail recipe
           </p>
+          <h5>Technology</h5>
+          <ul>
+            <li>Front-End: React</li>
+            <li>Back-End: Ruby on Rails</li>
+            <li>Authentication: Auth0</li>
+            <li>REST API: TheCocktailDB</li>
+            <li>Styling: Semantic-UI</li>
+            <li>Cloud Platform: Heroku</li>
+          </ul>
+          <a href="https://fluckey-cocktail-db.herokuapp.com" target="_blank">
+            Live Demo
+          </a>
+          <br></br>
+          <a href="https://github.com/jonnyfluckey/cocktail_db" target="_blank">
+            Source Code
+          </a>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       </section>
       <section className="spotlight">
