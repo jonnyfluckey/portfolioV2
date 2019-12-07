@@ -4,10 +4,14 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
+import { Link } from 'gatsby';
+
 import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
+import pic2 from '../assets/images/home.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/cocktail_db_mockup.jpg';
+import pic5 from '../assets/images/code.jpg';
+
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -35,29 +39,30 @@ const IndexPage = () => (
     <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>Background</h2>
+          <h2>Who am I?</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            Hey now! I'm Jonny Fluckey. I love to develop web applications that
+            help people organize their data and gain insights to take action
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            <br />
+            I'm also not a complete bore, so I also like to make apps that are
+            fun!
           </p>
         </header>
         <ul className="icons major">
           <li>
             <span className="icon brands fa-react major style2">
-              <span className="label">Ipsum</span>
+              <span className="label">React</span>
             </span>
           </li>
           <li>
             <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
+              <span className="label">Ruby</span>
             </span>
           </li>
           <li>
             <span className="icon brands fa-git-alt major style3">
-              <span className="label">Dolor</span>
+              <span className="label">Git</span>
             </span>
           </li>
         </ul>
@@ -70,10 +75,17 @@ const IndexPage = () => (
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>Projects</h2>
+          <h2>Projects I've Produced</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Check out my{' '}
+            <a
+              href="https://www.github.com/jonnyfluckey"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>{' '}
+            for more examples
           </p>
         </div>
       </section>
@@ -85,23 +97,32 @@ const IndexPage = () => (
           <h2>Cocktail_DB</h2>
           <p>
             An application for searching cocktail recipes. The application has
-            the ability to search for cocktails, save your favorites, or pull a
-            random cocktail recipe
+            the ability to search for cocktails, have users save their
+            favorites, or pull a random cocktail recipe
           </p>
           <h5>Technology</h5>
           <ul>
             <li>Front-End: React</li>
             <li>Back-End: Ruby on Rails</li>
+            <li>Database: PostgreSQL</li>
             <li>Authentication: Auth0</li>
             <li>REST API: TheCocktailDB</li>
             <li>Styling: Semantic-UI</li>
             <li>Cloud Platform: Heroku</li>
           </ul>
-          <a href="https://fluckey-cocktail-db.herokuapp.com" target="_blank">
+          <a
+            href="https://fluckey-cocktail-db.herokuapp.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live Demo
           </a>
           <br></br>
-          <a href="https://github.com/jonnyfluckey/cocktail_db" target="_blank">
+          <a
+            href="https://github.com/jonnyfluckey/cocktail_db"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Source Code
           </a>
           <br></br>
@@ -111,26 +132,81 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <img src={pic2} alt="" />
         </div>
         <div className="content">
           <h2>Real Estate Deal Analyzer</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            An application component I designed for a pro-bono project that
+            calculates and analyzes the profit and profit margin for a house
+            flip. This component incorporates data from multiple API's, as well
+            as demonstrates integration with Firebase to provide a simple
+            back-end
           </p>
+          <h5>Technology</h5>
+          <ul>
+            <li>Front-End: React</li>
+            <li>Database: Cloud Firestore</li>
+            <li>REST API: Zillow</li>
+            <li>REST API: Google Places Autocomplete</li>
+            <li>Styling: Material-UI</li>
+            <li>Cloud Provider: Firebase</li>
+          </ul>
+          <a href="/#" target="_blank" rel="noopener noreferrer">
+            Live Demo
+          </a>
+          <br></br>
+          <a href="/#" target="_blank" rel="noopener noreferrer">
+            Source Code
+          </a>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={pic5} alt="" />
         </div>
         <div className="content">
           <h2>Open Source Contributions</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            I have contributed to a number of projects helping them develop
+            their code base.
           </p>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/legesher/legesher-translations/pull/55"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Legesher Translations
+              </a>
+              : An open source project dedicated to translating spoken languages
+              into programming languages
+            </li>
+            <li>
+              <a
+                href="https://github.com/codebuddies/react-concept/pull/19"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Codebuddies
+              </a>
+              : Community-organized hangouts for learning programming together
+            </li>
+            <li>
+              <a
+                href="https://github.com/NikhilNamal17/popular-movie-quotes/pull/307"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Popular-Movie-Quotes
+              </a>
+              : an NPM package that returns popular movie quotes
+            </li>
+          </ul>
         </div>
       </section>
     </section>
@@ -138,56 +214,73 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+          <h2>I got Mad Skills as well</h2>
+          <blockquote style={{ borderLeft: 'hidden' }}>
+            The whole is greater than the sum of its parts
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
+            -Aristotle
+          </blockquote>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+          <li className="icon brands fa-react">
+            <h3>Front-End</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              <strong>Framework:</strong>
+              <br />
+              React
+              <br />
+              <br />
+              <strong>Styling Libraries:</strong>
+              <br />
+              Material-UI
+              <br />
+              Semantic-UI
             </p>
           </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+          <li className="icon solid fa-gem">
+            <h3>Back-End</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              <strong>Framework:</strong>
+              <br />
+              Ruby on Rails
             </p>
           </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+          <li className="icon solid fa-database">
+            <h3>Database</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              PostgreSQL
+              <br />
+              Cloud Firestore (Firebase)
             </p>
           </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+          <li className="icon solid fa-cloud">
+            <h3>Cloud</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Netlify
+              <br />
+              Heroku
+              <br />
+              Firebase
             </p>
           </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
+          <li className="icon solid fa-tools">
+            <h3>Tools</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              VSCode
+              <br />
+              Postman
+              <br />
+              Github
+              <br />
+              Bitbucket
             </p>
           </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
+          <li className="icon solid fa-comments">
+            <h3>Soft Skills</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Problem Solving
+              <br />
+              Communcation
             </p>
           </li>
         </ul>
@@ -197,22 +290,24 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Wanna Know More?</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Here's some more information if you haven't gotten your fill
+            <br />
+            <br />
+            Also, please reach out!
           </p>
         </header>
-        <ul className="actions stacked">
+        <ul className="actions stacked" style={{ marginTop: '6%' }}>
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
+            <Link to="/resume" className="button fit primary">
+              Resume
+            </Link>
           </li>
           <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
+            <Link to="/#" className="button fit">
+              Contact Me
+            </Link>
           </li>
         </ul>
       </div>
