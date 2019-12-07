@@ -2,10 +2,6 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-const handleSubmit = e => {
-  e.preventDefault();
-};
-
 const IndexPage = () => (
   <Layout fullMenu>
     <article id="main">
@@ -19,9 +15,8 @@ const IndexPage = () => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
           >
-            <input type="hidden" name="contact-form" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform">
               <div className="col-6 col-12-xsmall">
                 <input
