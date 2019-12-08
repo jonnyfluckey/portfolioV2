@@ -161,12 +161,20 @@ const IndexPage = () => (
             <li>Cloud Provider: Firebase</li>
           </ul>
           <div>
-            <a href="/#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://deal-analyzer-deb8d.firebaseapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Live Demo
             </a>
           </div>
           <div>
-            <a href="/#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/jonnyfluckey/deal-analyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Source Code
             </a>
           </div>
