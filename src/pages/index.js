@@ -40,14 +40,19 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>Who am I?</h2>
-          <p>
-            Hey now! I'm Jonny Fluckey. I love to develop web applications that
-            help people organize their data and gain insights to take action
-            <br />
-            <br />
-            I'm also not a complete bore, so I also like to make apps that are
-            fun!
-          </p>
+          <div>
+            <p>
+              Hey now! I'm Jonny Fluckey. I love to develop web applications
+              that help people organize their data and gain insights to take
+              action
+            </p>
+          </div>
+          <div>
+            <p>
+              I'm also not a complete bore, so I also like to make apps that are
+              fun!
+            </p>
+          </div>
         </header>
         <ul className="icons major">
           <li>
@@ -110,21 +115,24 @@ const IndexPage = () => (
             <li>Styling: Semantic-UI</li>
             <li>Cloud Platform: Heroku</li>
           </ul>
-          <a
-            href="https://fluckey-cocktail-db.herokuapp.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
-          <br></br>
-          <a
-            href="https://github.com/jonnyfluckey/cocktail_db"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Source Code
-          </a>
+          <div>
+            <a
+              href="https://fluckey-cocktail-db.herokuapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/jonnyfluckey/cocktail_db"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
+          </div>
           <br></br>
           <br></br>
           <br></br>
@@ -152,13 +160,16 @@ const IndexPage = () => (
             <li>Styling: Material-UI</li>
             <li>Cloud Provider: Firebase</li>
           </ul>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </a>
-          <br></br>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
-            Source Code
-          </a>
+          <div>
+            <a href="/#" target="_blank" rel="noopener noreferrer">
+              Live Demo
+            </a>
+          </div>
+          <div>
+            <a href="/#" target="_blank" rel="noopener noreferrer">
+              Source Code
+            </a>
+          </div>
           <br></br>
           <br></br>
           <br></br>
@@ -216,9 +227,8 @@ const IndexPage = () => (
         <header className="major">
           <h2>I got Mad Skills as well</h2>
           <blockquote style={{ borderLeft: 'hidden' }}>
-            The whole is greater than the sum of its parts
-            <br />
-            -Aristotle
+            <div>The whole is greater than the sum of its parts</div>
+            <div>-Aristotle</div>
           </blockquote>
         </header>
         <ul className="features">
@@ -291,24 +301,19 @@ const IndexPage = () => (
       <div className="inner">
         <header>
           <h2>Wanna Know More?</h2>
-          <p>
-            Here's some more information if you haven't gotten your fill
-            <br />
-            <br />
-            Also, please reach out!
-          </p>
+          <p>Please reach out!</p>
         </header>
         <ul className="actions stacked" style={{ marginTop: '6%' }}>
           <li>
-            <Link to="/resume" className="button fit primary">
-              Resume
-            </Link>
-          </li>
-          <li>
-            <Link to="/#" className="button fit">
+            <Link to="/contact" className="button fit primary">
               Contact Me
             </Link>
           </li>
+          {/* <li>
+            <Link to="/#" className="button fit">
+              Contact Me
+            </Link>
+          </li> */}
         </ul>
       </div>
     </section>
