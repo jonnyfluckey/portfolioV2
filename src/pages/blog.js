@@ -25,7 +25,15 @@ class BlogIndex extends React.Component {
                 return (
                   <div key={node.slug}>
                     {/* <Image src={node.featured_image} /> */}
-                    <img src={node.featured_image} height="200" width="250" />
+                    <div className="box alt">
+                      <div className="row gtr-50 gtr-uniform">
+                        <div className="col-8">
+                          <span className="image fit">
+                            <img src={node.featured_image} alt="" />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                     <h3 style={{ margin: '0' }}>
                       <Link to={`/blog/${node.slug}`}>{title}</Link>
                     </h3>

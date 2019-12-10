@@ -43,12 +43,13 @@ class BlogPostTemplate extends React.Component {
                   </span>
                   <br />
                   <br />
-                  <img
-                    src={post.featured_image}
-                    alt="Post"
-                    height="350px"
-                    width="450px"
-                  />
+                  <div className="row gtr-50 gtr-uniform">
+                    <div className="col-8">
+                      <span className="image fit">
+                        <img src={post.featured_image} alt="Post" />
+                      </span>
+                    </div>
+                  </div>
                   <hr />
                   <div dangerouslySetInnerHTML={{ __html: post.body }} />
                   {/* <Bio /> */}

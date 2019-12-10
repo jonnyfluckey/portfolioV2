@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/home.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+// import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/cocktail_db_mockup.jpg';
 import pic5 from '../assets/images/code.jpg';
 
