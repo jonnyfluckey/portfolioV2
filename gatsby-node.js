@@ -17,11 +17,12 @@ exports.createPages = async ({ graphql, actions }) => {
   try {
     posts = await graphql(`
       {
-        allButterPost {
+        allButterPost(sort: { fields: published, order: DESC }) {
           edges {
             node {
               id
               seo_title
+              published
               slug
               categories {
                 name
