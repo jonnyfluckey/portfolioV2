@@ -299,6 +299,12 @@ const IndexPage = () => (
               Problem Solving
               <br />
               Communcation
+              <br />
+              Teamwork
+              <br />
+              Accountability
+              <br />
+              Patience
             </p>
           </li>
         </ul>
@@ -317,11 +323,11 @@ const IndexPage = () => (
               Contact Me
             </Link>
           </li>
-          {/* <li>
-            <Link to="/#" className="button fit">
-              Contact Me
+          <li>
+            <Link to="/blog" className="button fit">
+              Blog Posts
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
     </section>
