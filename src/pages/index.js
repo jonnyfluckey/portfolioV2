@@ -243,9 +243,20 @@ const IndexPage = () => (
           <li className="icon brands fa-react">
             <h3>Front-End</h3>
             <p>
+              HTML5
+              <br />
+              CSS
+              <br />
+              Javascript (ES6)
+              <br />
+              JSX
+              <br />
+              <br />
               <strong>Framework:</strong>
               <br />
-              React
+              React.js
+              <br />
+              Gatsby.js
               <br />
               <br />
               <strong>Styling Libraries:</strong>
@@ -258,6 +269,11 @@ const IndexPage = () => (
           <li className="icon solid fa-gem">
             <h3>Back-End</h3>
             <p>
+              Ruby
+              <br />
+              Node.js
+              <br />
+              <br />
               <strong>Framework:</strong>
               <br />
               Ruby on Rails
@@ -266,7 +282,12 @@ const IndexPage = () => (
           <li className="icon solid fa-database">
             <h3>Database</h3>
             <p>
+              SQL:
+              <br />
               PostgreSQL
+              <br />
+              <br />
+              NoSQL:
               <br />
               Cloud Firestore (Firebase)
             </p>
@@ -279,6 +300,8 @@ const IndexPage = () => (
               Heroku
               <br />
               Firebase
+              <br />
+              Glitch
             </p>
           </li>
           <li className="icon solid fa-tools">
